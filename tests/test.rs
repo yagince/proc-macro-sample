@@ -1,6 +1,6 @@
 use proc_macro_sample::SelfName;
 
-#[derive(Debug, Clone, PartialEq, SelfName)]
+#[derive(SelfName)]
 struct Hoge {}
 
 #[test]
@@ -9,7 +9,7 @@ fn test_hoge() {
     assert_eq!(hoge.self_name(), "Hoge");
 }
 
-#[derive(Debug, Clone, PartialEq, SelfName)]
+#[derive(SelfName)]
 #[self_name(lowercase)]
 struct HogeLowercase {}
 
