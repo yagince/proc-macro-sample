@@ -3,6 +3,7 @@ name = "proc_macro_sample"
 version = "0.1.0"
 authors = ["yagince <straitwalk@gmail.com>"]
 edition = "2018"
+publish = false
 
 [lib]
 proc-macro = true
